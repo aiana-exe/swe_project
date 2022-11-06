@@ -1,0 +1,24 @@
+[
+    {
+        "model":"registration.Admin",
+        "pk":1,
+        "fields":{
+            "username":"admin",
+            "password":"Qquerty1!"
+        }
+    },
+    {
+        "model":"registration.Department",
+        "pk":1,
+        "fields":{
+
+        }
+    },
+    {
+        "model":"registration.Specialization_details",
+        "pk":1,
+        "fields":{
+
+        }
+    }
+]

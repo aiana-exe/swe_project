@@ -1,0 +1,23 @@
+<h1>Patients</h1>
+
+
+<table border="1">
+    {% for x in all_patients %}
+      <tr>
+      <td><a href="updatepatient/{{ x.id }}">{{ x.iin_num }}</a></td>
+      <td>{{ x.date_of_birth }}</td>
+      <td>{{ x.full_name}}</td>
+      <td>{{ x.contact_num }}</td>
+      <td>{{ x.blood_group }}</td>
+      <td>{{ x.emergency_cont_num }}</td>
+      <td>{{ x.email }}</td>
+      <td>{{ x.address }}</td>
+      <td>{{ x.registration_date }}</td>
+      <td>{{ x.password }}</td>
+      <td>{{ x.marital_status }}</td>
+      <td><a href="deletepatient/{{ x.id }}">delete</a></td>
+      </tr>
+    {% endfor %}
+    </table>
+
+    <button onclick="location.href = '/adminpage/register/patient'">Register a patient</button>
