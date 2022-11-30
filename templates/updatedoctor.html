@@ -1,0 +1,54 @@
+<h1>Update patient</h1>
+
+<form action="updaterecord/{{doctor.id}}" method="post">
+{% csrf_token %}
+Full name:<br>
+<input name="full_name" value="{{ doctor.full_name }}">
+<br><br>
+Rating:<br>
+<input name="rating" value="{{ doctor.rating }}">
+<br><br>
+ Date of birth:<br>
+<input name="birthdate" value="{{ doctor.date_of_birth }}">
+<br><br>
+ IIN num:<br>
+<input name="iin" value="{{ doctor.iin_num}}">
+<br><br>
+Education degree:<br>
+<input name="education_degree" value="{{ doctor.education_degree }}">
+<br><br>
+Schedule details:<br>
+<input name="schedule_details" value="{{ doctor.schedule_details }}">
+<br><br>
+Contact number:<br>
+<input name="cont" value="{{ doctor.contact_num }}">
+<br><br>
+Price of appointment:<br>
+<input name="price_of_appointment" value="{{ doctor.price_of_appointment }}">
+<br><br>
+Address:<br>
+<input name="address" value="{{ doctor.address }}">
+<br><br>
+Category:<br>
+<input name="category" value="{{ doctor.category }}">
+<br><br>
+Password:<br>
+<input name="password" value="{{ doctor.password }}">
+<br><br>
+Photo:<br>
+<input name="photo" value="{{ doctor.photo }}">
+<br><br>
+Experience:<br>
+<input name="experience" value="{{ doctor.experience }}">
+<br><br>
+Specialization details id:<br>
+<input name="specialization_details_id" value="{{ doctor.specialization_details_id }}">
+<br><br>
+Department id:<br>
+<input name="department_id" value="{{ doctor.department_id }}">
+<br><br>
+ID num:<br>
+<input name="id_num" value="{{ doctor.id_num }}">
+<br><br>
+<input type="submit" value="Submit">
+</form>

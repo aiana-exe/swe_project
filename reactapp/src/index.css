@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #1F3438;
+  margin: 20px 0px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.wrapper {
+  font-family: 'Gilroy';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.doctor {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.name {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+.procedures {
+  display: flex;
+  align-items: center;
+  margin: 5px 0px;
+}
+
+.spec {
+  margin: 5px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.slots {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin-top: 10px;
+}
+
+.slots p {
+  margin: 0px;
+  background: green;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-size: 12px;
+  color: white;
+}
+
+.slots p:hover {
+  cursor: pointer;
+}
+
+.doctors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  margin: 20px 0px;
+}
+
+.title {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.procedure {
+  background: goldenrod;
+  padding: 5px;
+  border-radius: 12px;
+  color: white;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.specializations {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+  margin-top: 15px;
+}
+
+.specialization {
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+.specialization:hover {
+  cursor: pointer;
+}
+
+.search {
+  padding: 5px;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 12px;
+  border: 1px solid black;
+  outline: none;
+}
+
+.showall {
+  background: green;
+  padding: 5px 10px;
+  border-radius: 12px;
+  color: white;
+  margin-top: 10px;
+}
+
+.showall:hover {
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-inner {
+  background: white;
+  padding: 20px 50px;
+  border-radius: 12px;
+}
+
+.modal-inner p {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.buttons div:first-child {
+  background: green;
+  padding: 5px 10px;
+  border-radius: 12px;
+  margin-right: 5px;
+}
+
+.buttons div:last-child {
+  background: red;
+  padding: 5px 10px;
+  border-radius: 12px;
+  margin-right: 5px;
+}
+
+.buttons div:hover {
+  cursor: pointer;
+}

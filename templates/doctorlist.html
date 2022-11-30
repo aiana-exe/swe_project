@@ -1,0 +1,27 @@
+<h1>Doctors</h1>
+
+
+<table border="1">
+    {% for x in all_doctors %}
+      <tr>
+      <td><a href="updatedoctor/{{ x.id }}">{{ x.iin_num }}</a></td>
+      <td>{{ x.date_of_birth }}</td>
+      <td>{{ x.full_name}}</td>
+      <td>{{ x.contact_num }}</td>
+      <td>{{ x.department_id }}</td>
+      <td>{{ x.specialization_details_id }}</td>
+      <td>{{ x.experience }}</td>
+      <td>{{ x.address }}</td>
+      <td>{{ x.photo}}</td>
+      <td>{{ x.password }}</td>
+      <td>{{ x.category }}</td>
+      <td>{{ x.price_of_appointment}}</td>
+      <td>{{ x.schedule_details }}</td>
+      <td>{{ x.education_degree }}</td>
+      <td>{{ x.rating }}</td>
+      <td><a href="deletedoctor/{{ x.id }}">delete</a></td>
+      </tr>
+    {% endfor %}
+    </table>
+
+    <button onclick="location.href = '/adminpage/register/doctor'">Register a doctor</button>

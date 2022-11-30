@@ -1,0 +1,39 @@
+<h1>Update patient</h1>
+
+<form action="updaterecord/{{patient.id}}" method="post">
+{% csrf_token %}
+Full name:<br>
+<input name="full_name" value="{{ patient.full_name }}">
+<br><br>
+Marital status:<br>
+<input name="marital_status" value="{{ patient.marital_status }}">
+<br><br>
+ Date of birth:<br>
+<input name="birthdate" value="{{ patient.date_of_birth }}">
+<br><br>
+ IIN num:<br>
+<input name="iin" value="{{ patient.iin_num}}">
+<br><br>
+Blood group:<br>
+<input name="bloodgroup" value="{{ patient.blood_group }}">
+<br><br>
+Emergency contact number:<br>
+<input name="emergcont" value="{{ patient.emergency_cont_num }}">
+<br><br>
+Contact number:<br>
+<input name="cont" value="{{ patient.contact_num }}">
+<br><br>
+Email:<br>
+<input name="email" value="{{ patient.email }}">
+<br><br>
+Address:<br>
+<input name="address" value="{{ patient.address }}">
+<br><br>
+registration date:<br>
+<input name="regdate" value="{{ patient.registration_date }}">
+<br><br>
+Password:<br>
+<input name="password" value="{{ patient.password }}">
+<br><br>
+<input type="submit" value="Submit">
+</form>
